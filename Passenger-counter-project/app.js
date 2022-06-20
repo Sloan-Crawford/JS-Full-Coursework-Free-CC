@@ -27,3 +27,12 @@ const resetCount = () => {
 }
 
 button3.addEventListener("click", resetCount);
+
+
+
+
+
+let firstName = "Sloan";
+let lastName = "Crawford";
+let fullName = `${firstName } ${lastName}`;
+console.log(fullName);
