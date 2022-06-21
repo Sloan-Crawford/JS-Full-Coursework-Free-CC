@@ -1,22 +1,33 @@
+// if written as an arrow function, this isn't hoisted so it needs to be declared before invoked:
 let getRndInteger = (min, max) => {
-  return Math.floor(Math.random() * (11 - 2 + 1)) + 2;
-}
+  let randomNumber = Math.floor(Math.random() * (max - min + 1)) + 2;
+  if (randomNumber === 1) {
+    return 11;
+  } else if (randomNumber > 10) {
+    return 10;
+  } else return randomNumber;
+};
 
-const firstCard = getRndInteger();
-const secondCard = getRndInteger();
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
+let cards = [];
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 let startBtn = document.querySelector(".start-btn");
 let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 let hitBtn = document.querySelector(".hit-btn");
-// console.log(sum);
 
-function renderGame() {
+let player = {
+  name: "Sloan",
+  chips: 145,
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = `${player.name}: $${player.chips}`;
+
+  function addCard(){
   cardsEl.textContent = `Cards: ${[cards]}`;
   sumEl.textContent = `Sum: ${sum}`;
   hitBtn.classList.add("hit-btn-show");
@@ -31,22 +42,31 @@ function renderGame() {
     isAlive = false;
   }
   messageEl.textContent = message;
-  console.log(`Do you have blackjack? ${hasBlackJack}`);
-  console.log(`Are you alive? ${isAlive}`);
+  // console.log(`Do you have blackjack? ${hasBlackJack}`);
+  // console.log(`Are you alive? ${isAlive}`);
+} 
+
+function renderGame() {
+  isAlive = true;
+  firstCard = getRndInteger(1,13);
+  secondCard = getRndInteger(1,13);
+  cards = [firstCard, secondCard];
+  sum = firstCard + secondCard;
+addCard();
 }
 
 const newCard = () => {
- let nextCard = getRndInteger();
+  if (isAlive && !hasBlackJack) {
+ let nextCard = getRndInteger(1,13);
  messageEl.textContent = "Drawing a new card";
  sum += nextCard;
  cards.push(`${nextCard}`);
- renderGame();
+ addCard();
+  }
 }
 
 startBtn.addEventListener("click", renderGame);
 hitBtn.addEventListener("click", newCard);
-
-
 
 
 // additional notes:

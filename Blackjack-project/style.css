@@ -1,13 +1,27 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  background: darkgreen;
-  display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/Blackjack-project/images/poker-table-c.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   min-height: 90vh;
   font-weight: bold;
+}
+
+.container {
+  background: rgba(13, 75, 3, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.5rem 1rem 1.5rem;
+  min-width: 700px;
 }
 
 h1 {
@@ -42,7 +56,7 @@ p {
   letter-spacing: 1.5px;
   filter: brightness(90%);
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin: 1rem 0 0;
 }
 .hit-btn {
   opacity: 0;
