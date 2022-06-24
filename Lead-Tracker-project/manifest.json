@@ -1,0 +1,13 @@
+{
+ "manifest_version": 3,
+ "version": "1.22.2",
+ "name": "Lead Tracker",
+ "description": "Save a lead url to your lead tracker list for quick access.",
+ "action": {
+  "default_popup": "index.html",
+  "icons": {
+    "48": "green-money-icon-48.jpeg",
+    "128": "green-money-icon-128.jpeg"
+   }
+ }
+}
