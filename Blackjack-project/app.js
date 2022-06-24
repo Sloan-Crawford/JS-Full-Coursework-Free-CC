@@ -13,11 +13,11 @@ let sum = 0;
 let hasBlackJack = false;
 let isAlive = false;
 let message = "";
-let startBtn = document.querySelector(".start-btn");
-let messageEl = document.querySelector("#message-el");
-let sumEl = document.querySelector("#sum-el");
-let cardsEl = document.querySelector("#cards-el");
-let hitBtn = document.querySelector(".hit-btn");
+const startBtn = document.querySelector(".start-btn");
+const messageEl = document.querySelector("#message-el");
+const sumEl = document.querySelector("#sum-el");
+const cardsEl = document.querySelector("#cards-el");
+const hitBtn = document.querySelector(".hit-btn");
 
 let player = {
   name: "Sloan",
