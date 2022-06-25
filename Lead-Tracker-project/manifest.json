@@ -3,11 +3,16 @@
  "version": "1.22.2",
  "name": "Lead Tracker",
  "description": "Save a lead url to your lead tracker list for quick access.",
+ "icons": {
+    "48": "money-bag-48.png",
+    "128": "money-bag-128.png"
+   },
  "action": {
   "default_popup": "index.html",
-  "icons": {
-    "48": "green-money-icon-48.jpeg",
-    "128": "green-money-icon-128.jpeg"
+  
+   "default_icon": {
+    "48": "money-bag-48.png",
+    "128": "money-bag-128.png"
    }
  }
 }
