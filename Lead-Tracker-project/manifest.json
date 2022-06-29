@@ -7,15 +7,15 @@
     "tabs"
 ],
  "icons": {
-    "48": "money-bag-48.png",
-    "128": "money-bag-128.png"
+    "48": "images/money-bag-48.png",
+    "128": "images/money-bag-128.png"
    },
  "action": {
   "default_popup": "index.html",
   
    "default_icon": {
-    "48": "money-bag-48.png",
-    "128": "money-bag-128.png"
+    "48": "images/money-bag-48.png",
+    "128": "images/money-bag-128.png"
    }
  }
 }
