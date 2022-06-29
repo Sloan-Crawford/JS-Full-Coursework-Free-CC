@@ -1,8 +1,11 @@
 {
  "manifest_version": 3,
- "version": "1.22.2",
+ "version": "1.22.3",
  "name": "Lead Tracker",
- "description": "Save a lead url to your lead tracker list for quick access.",
+ "description": "Improve organization and save time. Save a lead url to your lead tracker list for quick access.",
+ "permissions": [
+    "tabs"
+],
  "icons": {
     "48": "money-bag-48.png",
     "128": "money-bag-128.png"

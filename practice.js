@@ -137,10 +137,77 @@
 
 
 // challenge 11 ------------------------
-const recipient = "James";
-const sender = "Sloan";
-const email = 
-    `Hey ${recipient}! 
-    How is it going? 
-    Cheers, ${sender}`
-console.log(email);
+// const recipient = "James";
+// const sender = "Sloan";
+// const email = 
+//     `Hey ${recipient}! 
+//     How is it going? 
+//     Cheers, ${sender}`
+// console.log(email);
+
+
+// challenge 12 ------------------------
+// for persisting data across page refresh:
+// localStorage.setItem("key", "value")
+// console.log(localStorage.getItem("key"));
+// localStorage.clear();
+// note: both key and value need to be strings
+
+
+// challenge 13 ------------------------
+// let myLeads = `["www.awesomelead.com"]`;
+// myLeads = JSON.parse(myLeads);
+// let secondLead = "www.secondlead.com";
+// myLeads.push(secondLead);
+// myLeads = JSON.stringify(myLeads);
+// console.log(typeof myLeads);
+
+
+// challenge 14 ------------------------
+// what are the 5 falsy values?
+// 0
+// ""
+// null       -> primitive. how a developer signifies emptiness 
+// undefined  -> primitive. how Javascript signifies emptiness
+// NaN
+
+
+// challenge 15 ------------------------
+// console.log(Boolean(""));     // false
+// console.log(Boolean("0"));    // true
+// console.log(Boolean(100));    // true
+// console.log(Boolean(null));   // false
+// console.log(Boolean([0]));    // true
+// console.log(Boolean(-0));     // false
+
+
+// challenge 16 ------------------------
+// function greetUser(greeting, user) {
+//   console.log(`${greeting}, ${user}!`)
+// };
+
+// greetUser("what's up", "Sloany");
+
+
+// challenge 17 ------------------------
+// function add(num1, num2) {
+//   let result =num1 + num2;
+//   return result;
+// }
+
+// console.log(add(5,10));
+
+
+// challenge 18 ------------------------
+// params when defining variables between parantheses when declaring a function
+// arguments when we pass in values into the function when we invoke the function
+
+// challenge 19 ------------------------
+// arrays as parameters
+
+function getFirst(arr) {
+  return arr[0];
+}
+
+let array = [1,2,3,4,5];
+console.log(getFirst(array));

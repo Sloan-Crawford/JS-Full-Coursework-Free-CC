@@ -14,7 +14,9 @@ input {
   letter-spacing: 0.7px;
 }
 
-#input-btn {
+#input-btn,
+#tab-btn,
+#delete-btn {
   background: #5f9345;
   color: #fff;
   padding: 10px 15px;
@@ -23,6 +25,22 @@ input {
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#delete-btn {
+  background: #fff;
+  color: #5f9345;
+  border: 1px solid #5f9345;
+}
+
+#input-btn:hover,
+#tab-btn:hover,
+#delete-btn:hover {
+  filter: brightness(105%);
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.1em);
 }
 
 #ul-el {
@@ -36,7 +54,7 @@ input {
 #ul-el li a {
   letter-spacing: 0.7px;
   padding: 0 0 0 10px;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #5f9345;
 }
 
