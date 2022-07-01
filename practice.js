@@ -204,10 +204,12 @@
 
 // challenge 19 ------------------------
 // arrays as parameters
+// function getFirst(arr) {
+//   return arr[0];
+// }
 
-function getFirst(arr) {
-  return arr[0];
-}
+// let array = [1,2,3,4,5];
+// console.log(getFirst(array));
 
-let array = [1,2,3,4,5];
-console.log(getFirst(array));
+
+// challenge 20 ------------------------

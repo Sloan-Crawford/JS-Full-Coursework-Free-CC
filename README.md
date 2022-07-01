@@ -6,10 +6,11 @@ Coursework notes and 3 complete JS mini-projects demonstrating fundamental skill
 
 - Passenger Counter App
 - Blackjack Game App
-- Lead Tracker project
+- Lead Tracker Chrome Extension
 
-### Demostrates practice working with:
+### Demonstrates practice working with:
 
+- variables
 - arrays
 - objects
 - booleans
@@ -21,3 +22,12 @@ Coursework notes and 3 complete JS mini-projects demonstrating fundamental skill
 - return statements
 - template literals
 - arrow functions
+- innerHTML
+- local storage: setItem(), getItem(), clear()
+- JSON object, parse and stringify
+- manifest.json
+- truthy and falsy values
+- functions with multiple parameters
+- event listeners
+- input.value
+- objects in arrays
