@@ -213,3 +213,81 @@
 
 
 // challenge 20 ------------------------
+// if (hasWon) {
+//  console.log(`${player} got ${points} points and won the ${game} game!`);
+// } else {
+//  console.log(`The winner is ${opponent}! ${player} lost the game.`);
+// };
+
+
+// challenge 21 ------------------------
+// let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"];
+// function course(array) {
+//  for (let i=0; i<array.length; i++) {
+// console.log(array[i]);
+// }};
+// course(myCourses);
+
+
+// challenge 22 ------------------------
+// localStorage.setItem("key", "value");
+// console.log(localStorage.getItem("key"));
+// localStorage.clear();
+
+
+// challenge 23 ------------------------
+// let data = [
+//  {
+//   player: "Jane",
+//   score: 52
+//  },
+//  {
+//   player: "Mark",
+//   score: 41
+//  }
+// ];
+
+// const btn = document.getElementById("button");
+// btn.addEventListener("click", function() {
+//  console.log(data[0].score);
+// });
+
+
+
+// challenge 24 ------------------------
+// function generateSentence(desc, arr) {
+//  let baseString = `The ${arr.length} ${desc} are `
+//  const lastIndex = arr.length - 1;
+//  const secLastIndex = arr.length - 2;
+//  for (let i=0; i<arr.length; i++) {
+//   if (i=== lastIndex) {
+//    baseString += arr[i];
+//   } else if (i=== secLastIndex) {
+//    baseString += `${arr[i]} and `  ;
+//   } else {
+//   baseString += `${arr[i]}, `
+//   }
+//  }
+//  return baseString;
+// };
+// console.log(generateSentence("best video games", ["Red Dead", "FF7", "Last of Us"]));
+//-> The 3 best video games are Red Dead, FF7 and Last of Us
+
+
+// challenge 25 ------------------------
+const imgs = [
+ "thing1.jpg",
+ "thing2.jpg",
+ "thing3.jpg",
+];
+
+const container = document.querySelector("container");
+
+function renderImages(arr) {
+ let imgsDOM = "";
+ for (let i=0; i<arr.length; i++) {
+  imgsDOM += `<img alt="employee in the company" class="team-img" src="${arr[i]}`;
+ }
+ container.innerHTML = imgsDOM;
+};
+renderImages(imgs);
